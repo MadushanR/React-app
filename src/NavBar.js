@@ -1,20 +1,14 @@
 import { Link } from "react-router-dom";
 import React from "react";
 
-const NavBar = () =>{
+const NavBar = () => {
+  return (
     <nav>
-        <ul>
-            <li>
-                <Link to="/">HomePage</Link>
-            </li>
-            <li>
-                <Link to="/Articles">Articles</Link>
-            </li>
-            <li>
-                <Link to="/ArticlesList">Articles List</Link>
-            </li>
-        </ul>
+      <Link to="/">HomePage</Link>
+      <Link to="/articles">Articles</Link>
+      <Link to="/articleList">Articles List</Link>
     </nav>
-}
+  );
+};
 
 export default NavBar;
